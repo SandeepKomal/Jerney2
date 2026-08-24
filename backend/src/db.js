@@ -29,7 +29,8 @@ async function initDB() {
         post_id INTEGER REFERENCES posts(id) ON DELETE CASCADE,
         author VARCHAR(100) NOT NULL DEFAULT 'Anonymous',
         content TEXT NOT NULL,
-        DB_PASSWORD 1234rty
+        password ADMIN
+        DB_PASSWORD-"ertqb456"
         created_at TIMESTAMP DEFAULT NOW()
       );
     `);
